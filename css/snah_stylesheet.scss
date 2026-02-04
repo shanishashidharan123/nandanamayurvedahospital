@@ -776,10 +776,13 @@ body{
 						}
 						.btn{
 							&.btn-outline-success{
+                                font-size: calc(16em/10);
 								color: var(--snahglow);
 								background-color: #ffffff;
                                 border-color: #ffffff;
                                 border-radius: 0 calc(25em/16) calc(25em/16) 0;
+                                padding: calc(6em/16) calc(12em/16);
+                                height: calc(38em/16);
                                 .fa-magnifying-glass{
                                     transform: scale(1);
                                 }
@@ -1648,6 +1651,9 @@ body{
 								background-color: #555F68;
 							}
 						}
+                        @media (max-width: 425px){
+                            font-size: 3vw;
+                        }
 					}
 				}
 		}
