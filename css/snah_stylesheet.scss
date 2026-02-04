@@ -527,11 +527,11 @@ body{
 				justify-content: space-between;
                 align-items: flex-end;
                 a{
-                    color: #000000;
+                    color: var(--themecolor5);
                 }
 				.navbar-brand{
 					display: flex;
-					margin: 0.25em auto;
+					margin: 0.25em auto 0.7em;
                     white-space: normal;
                     align-items: center;
 					img{
@@ -564,7 +564,6 @@ body{
 					}
 					ul.snah_secn{
 						display: flex;
-
 						width: 100%;
 						flex-wrap: wrap;
 						justify-content: space-around;
@@ -668,24 +667,23 @@ body{
 						font-size: 140%;
 						font-family: "SN Pro", sans-serif;
 						padding: 0;
-						margin: 0.1em 0 0;
+						margin: calc(8em/14) 0 0;
 						border: none;
 						border-radius: 0;
 					}
 					.dropdown-toggle {
 						&::after{
 							font-family: "Font Awesome 6 Free";
-							font-size: calc(10em/16);
+							font-size: calc(15em/16);
 							font-weight: 900;
 							font-style: normal;
 							font-variant: normal;
 							text-rendering: auto;
 							line-height: 1;
-							content: "\f078";
+							content: "\f13a";
 							vertical-align: 0;
 							border: none;
 							display: inline-block;
-							padding-left: 0.5em;
 							transform: rotate(0deg);
 							transition: none;
 						}
@@ -1519,10 +1517,10 @@ body{
 					color: var(--themeadcolor1);
 				}
 			}
-			.fa-arrow-left-long{
+			.fa-circle-left{
 				left: 0.5em;
 			}
-			.fa-arrow-right-long{
+			.fa-circle-right{
 				right: 0.5em;
 			}
 			.slick-slide{

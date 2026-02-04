@@ -161,8 +161,8 @@ $(function () {
                 dots: false,
                 infinite: true,
                 centerMode: true,
-                nextArrow: '<i class="fa-solid fa-arrow-right-long"></i>',
-                prevArrow: '<i class="fa-solid fa-arrow-left-long"></i>',
+                nextArrow: '<i class="fa-solid fa-circle-right"></i>',
+                prevArrow: '<i class="fa-solid fa-circle-left"></i>',
                 arrows: true,
                 autoplay: true,
                 autoplaySpeed: 5000
