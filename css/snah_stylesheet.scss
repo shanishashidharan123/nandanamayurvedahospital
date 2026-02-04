@@ -159,7 +159,7 @@
 @import url("slick.css");
 //Body
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: "SN Pro", sans-serif;
     font-size: 10px;
 	color: #000000;
     font-weight: 400;
@@ -343,7 +343,7 @@ body{
 	form{
 		font-size: 100%;
 		label, p.label{
-			font-family: "Poppins", sans-serif; 
+			font-family: "SN Pro", sans-serif; 
 			font-size: 120%;
 			font-weight: 500;
 			text-transform: uppercase;
@@ -516,7 +516,7 @@ body{
     }
 	//Header
     header{
-        font-family: "EB Garamond", serif;
+        font-family: "Marcellus", serif;
 		background-color: var(--themecolor1);
         position: relative;
         z-index: 2;
@@ -535,7 +535,7 @@ body{
                     white-space: normal;
                     align-items: center;
 					img{
-						width: calc(72em/20);
+						width: calc(280em/20);
 						height: auto;
 					}
                     .snahtext{
@@ -578,7 +578,7 @@ body{
 							display: block;
 							margin: 1.25em;
 							strong{
-								font-family: "Poppins", sans-serif;
+								font-family: "SN Pro", sans-serif;
 								text-transform: uppercase;
 								font-weight: 600;
 							}
@@ -633,7 +633,7 @@ body{
 					}
 				}
 				.nav-item { 
-                    font-family: "Poppins", sans-serif;
+                    font-family: "SN Pro", sans-serif;
                     font-size: 100%; 
                     font-weight: 400; 
 					position: relative;
@@ -666,7 +666,7 @@ body{
                     }
 					.dropdown-menu{
 						font-size: 140%;
-						font-family: "Poppins", sans-serif;
+						font-family: "SN Pro", sans-serif;
 						padding: 0;
 						margin: 0.1em 0 0;
 						border: none;
@@ -752,7 +752,7 @@ body{
 					}
 				}
 				.navbar-search{
-                    font-family: "Poppins", sans-serif;
+                    font-family: "SN Pro", sans-serif;
 					color: #ffffff;
                     display: flex;
                     flex-wrap: nowrap;
@@ -833,7 +833,7 @@ body{
 		position: relative;
 		z-index: 1;
 		h1, h2, h3, h4, h5, h6{ 
-			font-family: "EB Garamond", serif;
+			font-family: "Marcellus", serif;
 			font-style: normal;
 			text-transform: capitalize;
 			line-height: 120%;
@@ -844,7 +844,7 @@ body{
 			line-height: normal;
 		}
 		.smallcaps{
-			font-family: "EB Garamond", serif;
+			font-family: "Marcellus", serif;
 			font-size: 160%;
 			text-transform: uppercase;
 			letter-spacing: 0.25em; 
@@ -1680,7 +1680,7 @@ body{
 				color: var(--themecolor5);
 				+ p, + ul, + ol {
 					font-size: calc(450%/2);
-					font-family: "Poppins", sans-serif;
+					font-family: "SN Pro", sans-serif;
 					font-weight: 600;
 					font-style: italic;
 					margin-top: calc(6em/16);
@@ -1770,7 +1770,7 @@ body{
 				}
 			}
 			p, ul, ol{
-				font-family: "Poppins", sans-serif;
+				font-family: "SN Pro", sans-serif;
 				font-size: 180%;
 				font-weight: 400;
 				letter-spacing: 0.0125em;
@@ -1977,7 +1977,7 @@ body{
 			padding: 5em;
 			position: relative;
 			h2{
-				font-family: "Poppins", sans-serif;
+				font-family: "SN Pro", sans-serif;
 				font-size: 160%;
 				color: inherit;
 				text-transform: uppercase;
@@ -2411,7 +2411,7 @@ body{
 					padding: 3em;
 					margin-bottom: 2em;
 					p{
-						font-family: "Poppins", sans-serif;
+						font-family: "SN Pro", sans-serif;
 						font-size: 200%;
 						font-weight: 400;
 						line-height: normal;
@@ -3077,7 +3077,7 @@ body{
 					color: #000000;
 				}
 				p{
-					font-family: "Poppins", sans-serif;
+					font-family: "SN Pro", sans-serif;
 					font-size: 160%; 
 					font-weight: normal; 
 					color: #000000;
@@ -3453,14 +3453,14 @@ body{
 						@include textshadow1(var(--themeadcolor2));
 					}
 					p{
-						font-family: "EB Garamond", serif;
+						font-family: "Marcellus", serif;
 						font-size: 180%;
 						color: #000000;
 						font-weight: normal;
 						display: inline-block;
 						text-align: center;
 						strong{
-							font-family: "Poppins", sans-serif;
+							font-family: "SN Pro", sans-serif;
 							font-size: 200%;
 							font-weight: normal;
 							color: var(--themecolor4);
@@ -3931,14 +3931,14 @@ body{
 		.snah_secn{
 			color: var(--white);
 			h2{
-				font-family: "Poppins", sans-serif;
+				font-family: "SN Pro", sans-serif;
 				font-size: 160%;
 				font-weight: bold;
 				color: inherit;
 				margin: 0 0 0.9375em;
 			}
 			h3{
-				font-family: "Poppins", sans-serif;
+				font-family: "SN Pro", sans-serif;
 				font-size: 148%;
 				font-weight: bold;
 				color: inherit;
@@ -3960,7 +3960,7 @@ body{
 				margin: 2.5em 0;
 				.iconblock{
 					h2{
-						font-family: "Poppins", sans-serif;
+						font-family: "SN Pro", sans-serif;
 						font-size: 160%;
 						font-weight: bold;
 						color: inherit;
@@ -4085,7 +4085,7 @@ body{
 				position: relative;
 				padding-left: calc(19em/12);
 				strong{
-					font-family: "Poppins", sans-serif;
+					font-family: "SN Pro", sans-serif;
 				}
 				a{
 					color: inherit;
