@@ -1039,7 +1039,6 @@ body{
 					@include imgstyle1;
 					img{
 						width: 100%;
-                        outline: calc(2em / 10) solid rgba(255, 255, 255, 0.5);
                         outline-offset: calc(-10em / 10);
 					}
 					&.snah_bg_style1, .snah_bg_style1, &.snah_bg_style2, .snah_bg_style2{
@@ -1306,9 +1305,14 @@ body{
 					}
 				}
 				ul{
+                    font-size: 180%;
+                    font-weight: 400;
+                    display: flex;
+                    flex-direction: column;
 					padding-left: calc(19em/16);
 					margin-left: 0;
 					li{
+                        font-size: 100%;
 						list-style-type: none;
 						position: relative;
 						padding-left: calc(19em/16);
@@ -1658,18 +1662,20 @@ body{
 				}
 		}
 		#snah_features{
+            background-attachment: fixed;
+            background-size: 100% 100%;
 			padding: 5em 0;
 			background-color: var(--themecolor2);
 			position: relative;
 			z-index: 2;
 			&::after{
+                background-color: var(--themecolor2);
 				display: block;
 				width: 100%;
 				content: "";
-				background-repeat: no-repeat;
-				background-size: cover;
 				@include absolute;
 				z-index: 1;
+                opacity: 0.9;
 			}
 			.container{
 				position: relative; 
