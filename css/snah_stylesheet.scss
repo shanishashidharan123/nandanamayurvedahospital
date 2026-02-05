@@ -521,7 +521,20 @@ body{
         position: relative;
         z-index: 2;
 		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+        &::before{
+            display: block;
+            width: 100%;
+            content: "";
+            background-image: url("../images/bg1.png");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            @include absolute;
+            z-index: 2;
+            opacity: 0.05;
+        }
         nav{
+            position: relative;
+            z-index: 3;
             &.navbar{
                 font-size: 100%;
 				justify-content: space-between;
