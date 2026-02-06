@@ -1817,6 +1817,11 @@ body{
                     right: 50%;
                 }
             }
+            @media (max-width: 576px){
+                .d-flex{
+                    flex-wrap: wrap;
+                }
+            }
         }
 		#snah_about, #snah_facility{
 			h2, h3{
