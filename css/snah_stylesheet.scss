@@ -1752,6 +1752,7 @@ body{
 			position: relative; 
             .snah_secn{
                 display: block;
+                width: 100%;
             }
             .snah_slider{
 				width: 100%;
@@ -1788,6 +1789,27 @@ body{
                 }
                 .snah_slide{
                     display: block;
+                }
+            }
+            .fa-solid{
+                font-size: 300%;
+                margin: 0 0.125em -0.25em;
+                position: absolute;
+                bottom: 0;
+                z-index: 1;
+                @include textshadow1(#333333);
+                cursor: pointer;
+				&:hover, &:focus{
+					color: var(--snahglow);
+				}
+				&:active{
+					color: var(--themeadcolor1);
+				}
+                &.fa-circle-right{
+                    left: 50%;
+                }
+                &.fa-circle-left{
+                    right: 50%;
                 }
             }
         }

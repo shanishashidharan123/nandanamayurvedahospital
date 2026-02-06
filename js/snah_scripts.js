@@ -171,16 +171,16 @@ $(function () {
     }
     if ($("#snah_slider .snah_slider").length > 0) {
         $.getScript("js/slick.min.js").done(function () {
-            $("#snah_slider .snah_slider").slick({
-                slidesToShow: 3,
+            $("#snah_slider").slick({
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: false,
                 infinite: true,
                 centerMode: false,
-                nextArrow: '<i class="fa-solid fa-chevron-right"></i>',
-                prevArrow: '<i class="fa-solid fa-chevron-left"></i>',
+                nextArrow: '<i class="fa-solid fa-circle-right"></i>',
+                prevArrow: '<i class="fa-solid fa-circle-left"></i>',
                 arrows: true,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 5000,
                 responsive: [{
                         breakpoint: 1023,
