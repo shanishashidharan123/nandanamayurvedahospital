@@ -1134,13 +1134,13 @@ body{
 						border-radius: 5em;
 						text-decoration: none;
 						&:hover, &:focus{
-							color: var(--white);
+							color: var(--black);
 							background-color: var(--themeadcolor2);
 							border-color: var(--darkborder);
 							box-shadow: none;
 						}
 						&:active{
-							color: var(--white);
+							color: var(--black);
 							border-color: var(--darkborder);
 							background-color: var(--themeadcolor3);
 							@include boxshadow1;
