@@ -181,22 +181,7 @@ $(function () {
                 prevArrow: '<i class="fa-solid fa-circle-left"></i>',
                 arrows: true,
                 autoplay: true,
-                autoplaySpeed: 5000,
-                responsive: [{
-                        breakpoint: 1023,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 426,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
+                autoplaySpeed: 9000                
             });
         });
     }
