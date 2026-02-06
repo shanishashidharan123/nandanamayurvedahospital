@@ -180,7 +180,7 @@ $(function () {
                 nextArrow: '<i class="fa-solid fa-circle-right"></i>',
                 prevArrow: '<i class="fa-solid fa-circle-left"></i>',
                 arrows: true,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 5000,
                 responsive: [{
                         breakpoint: 1023,
