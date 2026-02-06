@@ -1072,16 +1072,20 @@ body{
 						img{
 							display: none;
 						}
-					}
-                    .snah_captions{
-                        p{
-                            font-size: 140%;
-                            font-style: italic;
-                            color: var(--black);
-                            text-align: center;
-                            display: block;
-                            padding: 0.25em;
+                        p.snah_captions{
+                            color: var(--white);
+                            background: rgba(51, 51, 51, 0.8);
+                            position: absolute;
+                            bottom: 0;
                         }
+					}
+                    .snah_captions p, p.snah_captions{
+                        font-size: 140%;
+                        font-style: italic;
+                        color: var(--black);
+                        text-align: center;
+                        display: block;
+                        padding: 0.25em;
                     }
 				}
 				.result{
@@ -1750,6 +1754,7 @@ body{
             overflow: visible;
             overflow-x: clip; 
 			position: relative; 
+            padding-bottom: 5em;
             .snah_secn{
                 display: block;
                 width: 100%;
