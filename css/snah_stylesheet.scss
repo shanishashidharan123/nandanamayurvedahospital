@@ -1758,6 +1758,7 @@ body{
 		#snah_slider{ 
             overflow: visible;
             overflow-x: clip; 
+			position: relative; 
             padding-bottom: 5em;
             .snah_secn{
                 display: block;
