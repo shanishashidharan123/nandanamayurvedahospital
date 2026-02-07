@@ -1828,9 +1828,13 @@ body{
         }
 		#facilities{
             .snah_secn{
+                margin-top: 1.5em;
                 .snah_photo{
                     border-color: var(--themeadcolor3);
-                    margin-bottom: 1em;
+                    margin-bottom: 1.5em;
+                    mask-image: radial-gradient(circle at 1.5rem 1.5rem, transparent 0, transparent 1rem, gold 0, gold 1.25rem, transparent 0, transparent 1.5rem, gold 0);
+                    mask-position: -1.5rem -1.5rem;
+                    mask-repeat: repeat;
                 }
                 h3{
                     font-size: 220%;
