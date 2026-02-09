@@ -37,6 +37,8 @@
 	--white: #ffffff;
 	--grey: #cccccc;  
 	--lightborder: rgba(255,255,255,0.13); 
+    --s: 20px;  /* control the size of the wave */
+    --w: 400px; /* preferred image width */
 }
 //mixins
 @mixin boxshadow($color){
@@ -1084,10 +1086,17 @@ body{
                             bottom: 0;
                         }
 					}
+                    .snah_captions{
+                        p{
+                            color: var(--white);
+                            background: rgba(51, 51, 51, 0.8);
+                            display: block;
+                            width: 100%;
+                        }
+                    }
                     .snah_captions p, p.snah_captions{
                         font-size: 140%;
                         font-style: italic;
-                        color: var(--black);
                         text-align: center;
                         display: block;
                         padding: 0.25em;
@@ -1292,12 +1301,12 @@ body{
 					font-weight: 400;
 				}
 				h2, h3{
-					+ p, + ul, + ol, + figure, +.form-group {
+					+ p, + ul, + ol, + figure, +.form-group, + address {
 						margin-top: calc(12em/18);
 					}
 				}
 				h4, h5, h6, p{
-					+ p, + ul, + ol, +  figure, +.form-group{
+					+ p, + ul, + ol, +  figure, +.form-group, + address{
 						margin-top: calc(12em/18);
 					}
 				}
@@ -3462,11 +3471,11 @@ body{
 			}
 		}
 		#snah_map{
-			background-color: var(--themecolor5);
+			background-color: var(--themeadcolor4);
 			padding: 3em;
 			margin: 0;
 			.raw-html-embed{
-				border: 3px solid var(--themeadcolor2);
+				border: 3px solid var(--themeadcolor4);
 				border-radius: 0;
 				box-shadow: 0 1em 5em 0 rgba(0, 0, 0, 0.15);
 				margin: 0;
@@ -3700,6 +3709,27 @@ body{
 				}
 			}
 		}
+        #contact{
+            .card {
+                background-color: rgba(255,255,255,0.00);
+                border: none;
+                position: relative;
+                &::before{
+                    content: "";
+                    background-color: var(--themeadcolor1);
+                    @include absolute;
+                    z-index: 1;
+                    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+                    mask-image: radial-gradient(circle at 1.5rem 1.5rem, transparent 0, transparent 1rem, gold 0, gold 1.25rem, transparent 0, transparent 1.5rem, gold 0);
+                    mask-position: -12.5rem -1.5rem;
+                    mask-repeat: repeat;
+                }
+                .snah_secn{
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
 	}
 	//Footer
 	footer{
