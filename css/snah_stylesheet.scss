@@ -1300,6 +1300,10 @@ body{
 					font-size: 180%;
 					font-weight: 400;
 				}
+                .big, p.big{
+                    font-size: 220%;
+                    font-style: italic;
+                }
 				h2, h3{
 					+ p, + ul, + ol, + figure, +.form-group, + address {
 						margin-top: calc(12em/18);
