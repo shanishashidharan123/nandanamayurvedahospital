@@ -1296,7 +1296,7 @@ body{
 					font-size: 180%;
 					font-weight: 600;
 				}
-				p{
+				p, ul, ol{
 					font-size: 180%;
 					font-weight: 400;
 				}
@@ -1374,6 +1374,11 @@ body{
 						}
 					}
 				}
+                ol{
+                    li{
+                        font-size: 100%;
+                    }
+                }
 				figure{
                     margin: 0;
 					&.image{
