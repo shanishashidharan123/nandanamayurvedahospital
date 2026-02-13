@@ -529,6 +529,7 @@ body{
             content: "";
             background-image: url("../images/bg1.jpg");
             background-repeat: no-repeat;
+            background-attachment: fixed;
             background-size: 100% auto;
             @include absolute;
             z-index: 2;
@@ -1706,7 +1707,7 @@ body{
 		}
 		#snah_features{
             background-attachment: fixed;
-            background-size: 100% 100%;
+            background-size: cover;
 			padding: 5em 0;
 			background-color: var(--themecolor2);
 			position: relative;
@@ -3752,6 +3753,7 @@ body{
             content: "";
             background-image: url("../images/ftbg.jpg");
             background-repeat: no-repeat;
+            background-attachment: fixed;
             background-position: center top;
             background-size: cover;
             @include absolute;
