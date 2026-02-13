@@ -547,7 +547,7 @@ body{
                 }
 				.navbar-brand{
 					display: flex;
-					margin: 0.25em auto 0.7em;
+					margin: 0.25em 0 0.7em;
                     white-space: normal;
                     align-items: center;
 					img{
@@ -567,7 +567,7 @@ body{
                     }
 					@media (min-width: 1601px){
                         img{
-						    width: calc(72vw/20); 
+						    width: 20.5vw; 
                         }
 					}
 				}
