@@ -1257,7 +1257,16 @@ body{
 						display: block;
 						width: 100%;
 						padding-bottom: calc(900%/16);
-						@include BGtopcenter;
+						@include BGcenter;
+                        position: relative;
+                        img{
+                            display: none;
+                        }
+                        .snah_captions{
+                            position: absolute;
+                            width: 100%;
+                            bottom: 0;
+                        }
 					}
 					&.white_bg{
 						background-color: var(--white);
@@ -1434,6 +1443,19 @@ body{
 						margin-top: calc(18em/18);
 					}
 				}
+                .snah_flex_1{
+                    width: calc(100%/2);
+                    margin-top: calc(12em/16);
+                    @media (max-width: 1199px){
+                        width: calc(100%/3);
+                    }
+                    @media (max-width: 767px){
+                        width: calc(100%/2);
+                    }
+                    @media (max-width: 575px){
+                        width: 100%;
+                    }
+                }
 			}
 			pagination{
 				&.snah_secn{
