@@ -1003,6 +1003,11 @@ body{
 					margin-top: 1.8em;
 				}
 			}
+            li{
+                ol, ul{
+                    margin-top: 0.6em;
+                }
+            }
 			#pagination-container{
 				&.simple-pagination{
 					margin: 3em 0;
@@ -1298,6 +1303,14 @@ body{
 					font-size: 180%;
 					font-weight: 400;
 				}
+                ul, ol{
+                    li{
+                        font-size: 100%;
+                        ul, ol{
+                            font-size: 100%;
+                        }
+                    }
+                }
                 table{
                     width: 100%;
                     border-color: var(--themeadcolor2);
