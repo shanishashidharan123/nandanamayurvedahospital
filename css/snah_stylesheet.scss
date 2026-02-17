@@ -170,18 +170,6 @@ body{
 	opacity: 0;
 	user-select: text;
 	overflow-wrap: anywhere;
-	.termsfeed-com---palette-dark.termsfeed-com---nb {
-		background-color: #403E21;
-	}
-	.termsfeed-com---pc-overlay {
-		background: rgba(38, 87, 106, 0.5); 
-	}
-	.termsfeed-com---palette-dark .cc-pc-head {
-		background: #403E21;
-	}
-	.termsfeed-com---palette-dark .cc-cp-foot {
-		background: #403E21;
-	}
 	#open_preferences_center{
 		font-size: 120%;
 		color: #ffffff;
@@ -1306,21 +1294,39 @@ body{
 					font-size: 180%;
 					font-weight: 600;
 				}
-				p, ul, ol{
+				p, ul, ol, table{
 					font-size: 180%;
 					font-weight: 400;
 				}
+                table{
+                    width: 100%;
+                    border-color: var(--themeadcolor2);
+                    margin-left: 0.25em;
+                    th,td{
+                        padding: 0.5em;
+                    }
+                    th{
+                        background-color: var(--themeadcolor2);
+                        font-size: 120%;
+                        font-weight: 600;
+                    }
+                    td{
+                        background-color: var(--themeadcolor1);
+                        font-size: 100%;
+                        font-weight: 400;
+                    }
+                }
                 .big, p.big{
                     font-size: 220%;
                     font-style: italic;
                 }
 				h2, h3{
-					+ p, + ul, + ol, + figure, +.form-group, + address {
+					+ p, + ul, + ol, + figure, +.form-group, + address, +table {
 						margin-top: calc(12em/18);
 					}
 				}
 				h4, h5, h6, p{
-					+ p, + ul, + ol, +  figure, +.form-group, + address{
+					+ p, + ul, + ol, +  figure, +.form-group, + address, +table{
 						margin-top: calc(12em/18);
 					}
 				}
