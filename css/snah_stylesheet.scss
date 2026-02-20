@@ -1592,7 +1592,7 @@ body{
 			}
 			[class*="fa-"]{
 				font-size: 300%;
-				color: #ffffff;
+				color: var(--themeadcolor1);
 				display: inline-block;
 				position: absolute;
 				z-index: 1;
@@ -1600,10 +1600,10 @@ body{
 				cursor: pointer;
 				@include textshadow1(#333333);
 				&:hover, &:focus{
-					color: var(--snahglow);
+					color: var(--themeadcolor2);
 				}
 				&:active{
-					color: var(--themeadcolor1);
+					color: var(--themeadcolor3);
 				}
 			}
 			.fa-circle-left{
