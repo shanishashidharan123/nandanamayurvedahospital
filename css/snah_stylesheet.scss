@@ -1579,7 +1579,9 @@ body{
 				}
                 .d-flex{
                     .snah_secn{
-                        flex: 1;
+                        @media (min-width: 568px){
+                            flex: 1;
+                        }
                     }
                 }
             }
