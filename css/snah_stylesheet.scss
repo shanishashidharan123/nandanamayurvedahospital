@@ -1513,6 +1513,9 @@ body{
 				width: 100%;
                 z-index: 1;
 				position: relative;
+                border-top: 10px double #c2b7a5;
+                margin-top: 1.5em;
+                padding-top: 1.5em;
                 .slick-slide{
                     &.slick-center{
                         opacity: 1;
@@ -1574,6 +1577,11 @@ body{
 						}
 					}
 				}
+                .d-flex{
+                    .snah_secn{
+                        flex: 1;
+                    }
+                }
             }
 		}
 		#snah_carousel{
@@ -1827,6 +1835,9 @@ body{
             .snah_slider{
 				width: 100%;
                 z-index: 1;
+                border: none;
+                margin-top: 0;
+                padding-top: 0;
                 .slick-slide{
                     &.slick-center{
                         opacity: 1;
