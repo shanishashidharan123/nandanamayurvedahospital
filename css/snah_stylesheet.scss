@@ -1580,9 +1580,13 @@ body{
 				}
                 .d-flex{
                     .snah_secn{
+                        width: 100%;
                         @media (min-width: 568px){
                             flex: 1;
                         }
+                    }
+                    @media (max-width: 567px){
+                        flex-wrap: wrap;
                     }
                 }
             }
