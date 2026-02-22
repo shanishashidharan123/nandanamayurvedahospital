@@ -40,6 +40,18 @@
     --s: 20px;  /* control the size of the wave */
     --w: 400px; /* preferred image width */
 }
+@media (prefers-color-scheme: dark) {
+    :root{
+	--themecolor1: #88AAA6;
+	--themecoloralpha1: rgba(136,170,166,0.9);
+	--themecolor2: #5A7364;
+	--themecoloralpha2: rgba(90,115,100,0.9);
+	--themecolor3: #0A4031;
+	--themecoloralpha3: rgba(10,64,49,0.9);
+	--themecolor4: #0F2624;
+	--themecoloralpha4: rgba(15,38,36,0.9);
+}
+}
 //mixins
 @mixin boxshadow($color){
     box-shadow: 0.2em 0.2em 0.2em $color; 
@@ -555,7 +567,7 @@ body{
                     }
 					@media (min-width: 1601px){
                         img{
-						    width: 20.5vw; 
+						    width: calc(28000vw/1366);
                         }
 					}
 				}
@@ -971,6 +983,11 @@ body{
 					background-image: linear-gradient(var(--themecolor3) 0%, var(--themecolor5) 100%);
 				}
 			}
+            @media (prefers-color-scheme: dark) {
+                &.theme_color_2, &.theme_color_3{
+                    color: var(--white);
+                }
+            }
 			&.theme_color_4{
 				color: var(--white);
 				background-color: var(--themecolor4);
@@ -1829,6 +1846,11 @@ body{
 					margin-top: calc(12em/16);
 				}
 			}
+            @media (prefers-color-scheme: dark) {
+                h1, p{
+                    color: var(--white);
+                }
+            }
 		} 
 		#snah_slider{ 
             overflow: visible;
