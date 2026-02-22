@@ -1553,7 +1553,7 @@ body{
 				width: 100%;
                 z-index: 1;
 				position: relative;
-                border-top: 10px double #c2b7a5;
+                border-top: 10px double var(--themeadcolor1);
                 margin-top: 1.5em;
                 padding-top: 1.5em;
                 .slick-slide{
