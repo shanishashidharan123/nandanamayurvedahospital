@@ -50,8 +50,16 @@
         --themecoloralpha3: rgba(10,64,49,0.9);
         --themecolor4: #0F2624;
         --themecoloralpha4: rgba(15,38,36,0.9);
+        --themeadcolor1: #40320A;
+        --themeadcoloralpha1: rgba(64,50,10,0.9);
+        --themeadcolor2: #390A40;
+        --themeadcoloralpha2: rgba(57,10,64,0.9);
+        --themeadcolor3: #0A4031;
+        --themeadcoloralpha3: rgba(10,64,49,0.9);
         --themeadcolor4: #49957F;
         --themeadcoloralpha4: rgba(73,149,127,0.9);
+        --themeadcolor5: #BFAE7E;
+        --themeadcoloralpha5: rgba(191,174,126,0.9);
     }
 }
 //mixins
@@ -715,11 +723,17 @@ body{
                         &:hover, &:focus, &.active{
                             color: var(--black);
                             background-color: var(--themeadcolor2);  
+                            @media (prefers-color-scheme: dark) {
+                                color: var(--white);
+                            }
                         }
                         &:active{
                             color: var(--black);
 							background-color: var(--themeadcolor2);
 							@include boxshadow1;  
+                            @media (prefers-color-scheme: dark) {
+                                color: var(--white);
+                            }
                         }
                         .fa-solid, .fas{
                             transform: rotate(-45deg);
@@ -1139,7 +1153,7 @@ body{
 					color: inherit;
 					text-decoration: none;
 					&:hover, &:focus{
-						color: var(--snahglow);
+						color: inherit;
                         text-decoration: underline; 
 					}
 					&:active{
@@ -1207,6 +1221,12 @@ body{
 								background-color: #555F68;
 							}
 						}
+                        @media (prefers-color-scheme: dark) {
+                            color: var(--white);
+                            &:hover, &:focus, &:active{
+							    color: var(--white);
+                            }
+                        }
 					}
 				}
 				form{
@@ -1639,6 +1659,9 @@ body{
 				&:active{
 					color: var(--themeadcolor3);
 				}
+                @media (prefers-color-scheme: dark) {
+                    @include textshadow1(var(--white));
+                }
 			}
 			.fa-circle-left{
 				left: 0.5em;
@@ -1707,6 +1730,11 @@ body{
 					font-weight: 400;
 					line-height: normal;
 				}
+                @media (prefers-color-scheme: dark) {
+                    h1, h2, p{
+                        color: var(--white);
+                    }
+                }
 				@media (max-width: 1024px){
                     width: 100%;
 				}
@@ -1776,6 +1804,12 @@ body{
 						}
                         @media (max-width: 425px){
                             font-size: 3vw;
+                        }
+                        @media (prefers-color-scheme: dark) {
+                            color: var(--white);
+                            &:hover, &:focus, &:active{
+							    color: var(--white);
+                            }
                         }
 					}
 				}
@@ -1920,6 +1954,9 @@ body{
                 }
                 &.fa-circle-left{
                     right: 50%;
+                }
+                @media (prefers-color-scheme: dark) {
+                    @include textshadow1(var(--white));
                 }
             }
             @media (max-width: 576px){
@@ -3816,9 +3853,6 @@ body{
                     mask-image: radial-gradient(circle at 1.5rem 1.5rem, transparent 0, transparent 1rem, gold 0, gold 1.25rem, transparent 0, transparent 1.5rem, gold 0);
                     mask-position: -12.5rem -1.5rem;
                     mask-repeat: repeat;
-                    @media (prefers-color-scheme: dark) {
-                        background-color: #40320A;
-                    }
                 }
                 .snah_secn{
                     position: relative;
@@ -3981,6 +4015,11 @@ body{
 					color: var(--themecolor3);
 					text-decoration: none;
 				}
+                @media (prefers-color-scheme: dark) {
+                    &:hover, &:focus, &:active{
+                        color: var(--themeadcolor4);
+                    }
+                }
 			}
 			&.socials{
 				a{
@@ -4019,6 +4058,11 @@ body{
 						color: var(--snahglow);
 						text-decoration: none;
 					}
+                    @media (prefers-color-scheme: dark) {
+                        &:hover, &:focus, &:active{
+                            color: var(--themeadcolor4);
+                        }
+                    }
 				}
 				ul{
 					font-size: 100%;
