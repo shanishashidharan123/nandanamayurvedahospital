@@ -1355,6 +1355,12 @@ body{
                     width: 100%;
                     border-color: var(--themeadcolor2);
                     margin-left: 0.25em;
+                    &.table-hover tbody tr{
+                        &:hover{
+                            color: inherit;
+                            opacity: 0.6;
+                        }
+                    }
                     th,td{
                         padding: 0.5em;
                     }
