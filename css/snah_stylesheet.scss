@@ -42,15 +42,17 @@
 }
 @media (prefers-color-scheme: dark) {
     :root{
-	--themecolor1: #88AAA6;
-	--themecoloralpha1: rgba(136,170,166,0.9);
-	--themecolor2: #5A7364;
-	--themecoloralpha2: rgba(90,115,100,0.9);
-	--themecolor3: #0A4031;
-	--themecoloralpha3: rgba(10,64,49,0.9);
-	--themecolor4: #0F2624;
-	--themecoloralpha4: rgba(15,38,36,0.9);
-}
+        --themecolor1: #88AAA6;
+        --themecoloralpha1: rgba(136,170,166,0.9);
+        --themecolor2: #5A7364;
+        --themecoloralpha2: rgba(90,115,100,0.9);
+        --themecolor3: #0A4031;
+        --themecoloralpha3: rgba(10,64,49,0.9);
+        --themecolor4: #0F2624;
+        --themecoloralpha4: rgba(15,38,36,0.9);
+        --themeadcolor4: #49957F;
+        --themeadcoloralpha4: rgba(73,149,127,0.9);
+    }
 }
 //mixins
 @mixin boxshadow($color){
@@ -3814,6 +3816,9 @@ body{
                     mask-image: radial-gradient(circle at 1.5rem 1.5rem, transparent 0, transparent 1rem, gold 0, gold 1.25rem, transparent 0, transparent 1.5rem, gold 0);
                     mask-position: -12.5rem -1.5rem;
                     mask-repeat: repeat;
+                    @media (prefers-color-scheme: dark) {
+                        background-color: #40320A;
+                    }
                 }
                 .snah_secn{
                     position: relative;
