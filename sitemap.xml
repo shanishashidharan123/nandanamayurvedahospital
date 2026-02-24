@@ -109,6 +109,27 @@
       </image:image>
   </url>
   <url>
+    <loc>https://sreenandanamayurveda.com/ayurvedic-treatments.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/doctorroom2.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/treatmentroom1.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/kitchen.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/treatment14.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/hospital1.jpg</image:loc>
+      </image:image>
+  </url>
+  <url>
     <loc>https://sreenandanamayurveda.com/panchakarma.html</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>daily</changefreq>
@@ -139,6 +160,12 @@
       </image:image>
   </url>
   <url>
+    <loc>https://sreenandanamayurveda.com/treatment-and-therapy-policy.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://sreenandanamayurveda.com/thyroid-and-diabetes-care.html</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>daily</changefreq>
@@ -151,33 +178,6 @@
       </image:image>
       <image:image>
         <image:loc>https://sreenandanamayurveda.com/images/treatments/thyroiddiabetescare.jpg</image:loc>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://sreenandanamayurveda.com/treatment-and-therapy-policy.html</loc>
-    <lastmod>2026-02-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://sreenandanamayurveda.com/ayurvedic_treatments.html</loc>
-    <lastmod>2026-02-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/doctorroom2.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/treatmentroom1.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/kitchen.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/treatment14.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/hospital1.jpg</image:loc>
       </image:image>
   </url>
   <url>
@@ -196,6 +196,24 @@
       </image:image>
       <image:image>
         <image:loc>https://sreenandanamayurveda.com/images/gallery/diet-correction.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/showcentral5.jpg</image:loc>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://sreenandanamayurveda.com/joint-and-spinal-care.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/treatments/backache.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/treatments/janu_vasti.jpeg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/treatments/spine_joint_key_treatments.jpg</image:loc>
       </image:image>
   </url>
   <url>
@@ -217,39 +235,6 @@
       </image:image>
       <image:image>
         <image:loc>https://sreenandanamayurveda.com/images/gallery/showcentral4.jpg</image:loc>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://sreenandanamayurveda.com/joint-and-spinal-care.html</loc>
-    <lastmod>2026-02-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/treatments/backache.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/treatments/janu_vasti.jpeg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/treatments/spine_joint_key_treatments.jpg</image:loc>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://sreenandanamayurveda.com/about.html</loc>
-    <lastmod>2026-02-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/hospital1.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/treatmentroom1.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/kitchen.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://sreenandanamayurveda.com/images/gallery/conferenceroom.jpg</image:loc>
       </image:image>
   </url>
   <url>
@@ -275,6 +260,24 @@
     <lastmod>2026-02-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sreenandanamayurveda.com/about.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/hospital1.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/treatmentroom1.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/kitchen.jpg</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://sreenandanamayurveda.com/images/gallery/conferenceroom.jpg</image:loc>
+      </image:image>
   </url>
   <url>
     <loc>https://sreenandanamayurveda.com/stress-lifestyle-diseases.html</loc>
