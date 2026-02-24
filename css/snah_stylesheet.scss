@@ -1157,7 +1157,7 @@ body{
                         text-decoration: underline; 
 					}
 					&:active{
-						color: var(--themeadcolor4);
+						color: var(--themeadcolor2);
 						text-decoration: none;
 					}
 				}
@@ -1889,11 +1889,81 @@ body{
 				}
 			}
             @media (prefers-color-scheme: dark) {
-                h1, p{
+                h1, p, ul, ol, blockquote {
                     color: var(--white);
                 }
             }
 		} 
+        #snah_docs{
+            background-attachment: fixed;
+            background-size: cover;
+			padding: 5em 0;
+			background-color: var(--themecolor2);
+			position: relative;
+			z-index: 2;
+			&::after{
+                background-color: var(--themecolor2);
+				display: block;
+				width: 100%;
+				content: "";
+				@include absolute;
+				z-index: 1;
+                opacity: 0.95;
+			}
+			.container{
+				position: relative; 
+				z-index: 3;
+				.snah_secn{
+					
+				}
+			}
+			h1{
+				font-size: 450%;
+				font-weight: 400;
+				color: var(--themecolor5);
+				+ p, + ul, + ol {
+					font-size: calc(450%/2);
+					font-family: "SN Pro", sans-serif;
+					font-weight: 600;
+					font-style: italic;
+					margin-top: calc(6em/16);
+				}
+			}
+			p{
+				font-weight: 400;
+				color: var(--themecolor5); 
+				+ p, + ul, + ol, + figure {
+					margin-top: calc(6em/16);
+				}
+			}
+			ul, ol{
+				li, ul, ol{
+					font-size: 100%;
+					p{
+						font-size: 100%;
+						margin: 0;
+					}
+					+ li, + ul, + ol, + figure {
+						margin-top: calc(6em/16);
+					}
+				}
+			}
+			blockquote{
+				display: inline-flex;
+				margin: 2em auto 0;
+				&::before, &::after{
+					color: rgba(239, 239, 230, 0.5);
+				}
+				+ p{
+					margin-top: calc(12em/16);
+				}
+			}
+            @media (prefers-color-scheme: dark) {
+                h1, p, ul, ol, blockquote{
+                    color: var(--white);
+                }
+            }
+        }
 		#snah_slider{ 
             overflow: visible;
             overflow-x: clip; 
