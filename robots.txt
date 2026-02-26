@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+Disallow: /patient-care-guidelines.html
+Disallow: /treatment-and-therapy-policy.html
+Disallow: /privacy-policy.html
+Disallow: /terms-and-conditions.html
+Disallow: /cancellation-and-refund-policy.html
+Disallow: /medical-disclaimer.html
+Sitemap: https://sreenandanamayurveda.com/sitemap.xml
