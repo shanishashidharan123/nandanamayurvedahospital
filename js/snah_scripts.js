@@ -66,8 +66,8 @@ $(function () {
     }
     var selector = '[href="' + pageName + '"]';
     if ($(selector).length > 0) {
-        $(".nav-item").removeClass("active");
         $(selector).closest(".nav-item").addClass("active");
+        $(selector+'.dropdown-item').addClass("active");
     }
     if ($(".alert").length > 0) {
         var timer = setTimeout(function () {
