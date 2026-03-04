@@ -1,5 +1,6 @@
 User-agent: *
-Disallow: 
+Allow: /
+Allow: /images/*
 Disallow: /patient-care-guidelines.html
 Disallow: /treatment-and-therapy-policy.html
 Disallow: /privacy-policy.html
