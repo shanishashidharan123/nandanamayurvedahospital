@@ -7,10 +7,9 @@
                    |__/
 
  Version: 1.8.1
-  Author: Ken Wheeler
+  Author: Ken Wheeler, updated by Shani
  Website: http://kenwheeler.github.io
     Docs: http://kenwheeler.github.io/slick
-    Repo: http://github.com/kenwheeler/slick
   Issues: http://github.com/kenwheeler/slick/issues
 
  */
@@ -205,9 +204,7 @@
     Slick.prototype.activateADA = function() {
         var _ = this;
 
-        _.$slideTrack.find('.slick-active').attr({
-            'aria-hidden': 'false'
-        }).find('a, input, button, select').attr({
+        _.$slideTrack.find('.slick-active').find('a, input, button, select').attr({
             'tabindex': '0'
         });
 
@@ -460,8 +457,8 @@
 
             if( _.slideCount > _.options.slidesToShow ) {
 
-                _.$prevArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
-                _.$nextArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
+                _.$prevArrow.removeClass('slick-hidden').removeAttr('tabindex');
+                _.$nextArrow.removeClass('slick-hidden').removeAttr('tabindex');
 
                 if (_.htmlExpr.test(_.options.prevArrow)) {
                     _.$prevArrow.prependTo(_.options.appendArrows);
@@ -474,7 +471,7 @@
                 if (_.options.infinite !== true) {
                     _.$prevArrow
                         .addClass('slick-disabled')
-                        .attr('aria-disabled', 'true');
+                        .attr('true');
                 }
 
             } else {
@@ -483,7 +480,6 @@
 
                     .addClass('slick-hidden')
                     .attr({
-                        'aria-disabled': 'true',
                         'tabindex': '-1'
                     });
 
@@ -875,7 +871,7 @@
 
             _.$prevArrow
                 .removeClass('slick-disabled slick-arrow slick-hidden')
-                .removeAttr('aria-hidden aria-disabled tabindex')
+                .removeAttr('tabindex')
                 .css('display','');
 
             if ( _.htmlExpr.test( _.options.prevArrow )) {
@@ -887,7 +883,7 @@
 
             _.$nextArrow
                 .removeClass('slick-disabled slick-arrow slick-hidden')
-                .removeAttr('aria-hidden aria-disabled tabindex')
+                .removeAttr('tabindex')
                 .css('display','');
 
             if ( _.htmlExpr.test( _.options.nextArrow )) {
@@ -900,7 +896,6 @@
 
             _.$slides
                 .removeClass('slick-slide slick-active slick-center slick-visible slick-current')
-                .removeAttr('aria-hidden')
                 .removeAttr('data-slick-index')
                 .each(function(){
                     $(this).attr('style', $(this).data('originalStyling'));
@@ -1345,7 +1340,6 @@
                 });
 
         _.$slides.add(_.$slideTrack.find('.slick-cloned')).attr({
-            'aria-hidden': 'true',
             'tabindex': '-1'
         }).find('a, input, button, select').attr({
             'tabindex': '-1'
@@ -1388,7 +1382,6 @@
                 });
 
             }).eq(_.currentSlide).find('button').attr({
-                'aria-selected': 'true',
                 'tabindex': '0'
             }).end();
         }
@@ -2334,8 +2327,7 @@
 
         allSlides = _.$slider
             .find('.slick-slide')
-            .removeClass('slick-active slick-center slick-current')
-            .attr('aria-hidden', 'true');
+            .removeClass('slick-active slick-center slick-current');
 
         _.$slides
             .eq(index)
@@ -2352,16 +2344,14 @@
                 if (index >= centerOffset && index <= (_.slideCount - 1) - centerOffset) {
                     _.$slides
                         .slice(index - centerOffset + evenCoef, index + centerOffset + 1)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
+                        .addClass('slick-active');
 
                 } else {
 
                     indexOffset = _.options.slidesToShow + index;
                     allSlides
                         .slice(indexOffset - centerOffset + 1 + evenCoef, indexOffset + centerOffset + 2)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
+                        .addClass('slick-active');
 
                 }
 
@@ -2391,14 +2381,12 @@
 
                 _.$slides
                     .slice(index, index + _.options.slidesToShow)
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false');
+                    .addClass('slick-active');
 
             } else if (allSlides.length <= _.options.slidesToShow) {
 
                 allSlides
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false');
+                    .addClass('slick-active');
 
             } else {
 
@@ -2409,15 +2397,13 @@
 
                     allSlides
                         .slice(indexOffset - (_.options.slidesToShow - remainder), indexOffset + remainder)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
+                        .addClass('slick-active');
 
                 } else {
 
                     allSlides
                         .slice(indexOffset, indexOffset + _.options.slidesToShow)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
+                        .addClass('slick-active');
 
                 }
 
@@ -2943,7 +2929,6 @@
 
         _.$slides
             .removeClass('slick-slide slick-active slick-visible slick-current')
-            .attr('aria-hidden', 'true')
             .css('width', '');
 
     };
@@ -2967,23 +2952,23 @@
             _.slideCount > _.options.slidesToShow &&
             !_.options.infinite ) {
 
-            _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
-            _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+            _.$prevArrow.removeClass('slick-disabled');
+            _.$nextArrow.removeClass('slick-disabled');
 
             if (_.currentSlide === 0) {
 
-                _.$prevArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
-                _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+                _.$prevArrow.addClass('slick-disabled');
+                _.$nextArrow.removeClass('slick-disabled');
 
             } else if (_.currentSlide >= _.slideCount - _.options.slidesToShow && _.options.centerMode === false) {
 
-                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
-                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+                _.$nextArrow.addClass('slick-disabled');
+                _.$prevArrow.removeClass('slick-disabled');
 
             } else if (_.currentSlide >= _.slideCount - 1 && _.options.centerMode === true) {
 
-                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
-                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+                _.$nextArrow.addClass('slick-disabled');
+                _.$prevArrow.removeClass('slick-disabled');
 
             }
 

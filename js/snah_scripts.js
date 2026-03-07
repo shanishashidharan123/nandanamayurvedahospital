@@ -154,7 +154,7 @@ $(function () {
         });
     }
     if ($("#snah_carousel").length > 0) {
-        $.getScript("js/slick.min.js").done(function () {
+        $.getScript("js/slick.js").done(function () {
             $("#snah_carousel").slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -170,7 +170,7 @@ $(function () {
         });
     }
     if ($("#snah_slider .snah_slider").length > 0) {
-        $.getScript("js/slick.min.js").done(function () {
+        $.getScript("js/slick.js").done(function () {
             $("#snah_slider").slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -186,7 +186,7 @@ $(function () {
         });
     }
     if ($(".snah_sliders").length > 0) {
-        $.getScript("js/slick.min.js").done(function () {
+        $.getScript("js/slick.js").done(function () {
             $(".snah_sliders").slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
