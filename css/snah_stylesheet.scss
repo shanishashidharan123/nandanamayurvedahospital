@@ -1700,7 +1700,6 @@ body{
 					&.snah_carousel_caption{
                         user-select: text;
 						height: auto;
-                        border-radius: 100%;
 						.snah_carousel_btn{
 							display: inline-block;
 							margin: calc(15em/18) 0 0;
@@ -1710,13 +1709,13 @@ body{
 			}
 			.snah_carousel_1{
 				@include BGcenter;
-				min-height: calc(100vh - 10.8em);
 				padding: 0;
 				position: relative;
                 .snah_secn{
                     display: flex;
                     align-items: flex-end;
                     justify-content: flex-end;
+                    min-height: calc(100vh - 10.8em);
                 }
 			}
 			.snah_carousel_caption{
@@ -1727,6 +1726,7 @@ body{
 				padding: 5em 8em;
 				position: relative;
 				z-index: 2;
+                border-radius: 100%;
 				h1, h2{
 					font-size: 280%; 
 					color: var(--black); 
