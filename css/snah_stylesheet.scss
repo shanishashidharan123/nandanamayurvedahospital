@@ -533,6 +533,7 @@ body{
         position: relative;
         z-index: 2;
 		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+		user-select: none;
         &::before{
             display: block;
             width: 100%;
