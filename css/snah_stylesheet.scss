@@ -1698,7 +1698,7 @@ body{
 				div{
 					height: 100%;
 					&.snah_carousel_caption{
-                        user-select: text;
+                        user-select: auto;
 						height: auto;
 						.snah_carousel_btn{
 							display: inline-block;
